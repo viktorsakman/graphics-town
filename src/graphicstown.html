@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="../libs/CS559/style559.css" />
+    <link rel="stylesheet" href="./libs/CS559/style559.css" />
   </head>
 
   <script type="importmap">
       {
           "imports": {
-              "three": "../libs/CS559-Three/build/three.module.js"
+              "three": "./libs/CS559-Three/build/three.module.js"
           }
       }
   </script>
@@ -16,7 +16,7 @@
   <br><button onclick="screenshot('canvas')">Screenshot</button> <button
       onclick="record('canvas','time')">Record</button> <input id="time" type="text" size="2" value="10"> seconds.
   <script type="module">
-      import { screenshot, record } from "../libs/CS559/saveCanvas.js";
+      import { screenshot, record } from "./libs/CS559/saveCanvas.js";
       window.screenshot = screenshot;
       window.record = record;
   </script>
