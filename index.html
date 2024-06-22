@@ -3,7 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./css/styles.css">
-        <script src="./js/resizeIFrames.js"></script>
+        <script>
+            function resizeIframe() {
+                const iframe = document.querySelector('iframe');
+                iframe.style.height = `${window.innerHeight}px`;
+            }
+    
+            window.addEventListener('load', resizeIframe);
+            window.addEventListener('resize', resizeIframe);
+        </script>
     </head>
     <iframe
         title="Graphics Town"
